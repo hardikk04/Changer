@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+@font-face {
+  font-family: main;
+  src: url(./2842e150d6666a9f53bb.woff);
+}
+
+@font-face {
+  font-family: italic;
+  src: url(./c5ce8b90fbb611d83f6f.woff);
+}
+
+.preloader h1,
+.preloader h3 {
+  font-family: italic;
+  font-weight: 600;
+}
+
+.nav-left > h1 {
+  font-family: italic;
+}
+
+.nav-left > h3 {
+  font-family: main;
+}
+
+.nav-right > h3 {
+  font-family: main;
+}
+.nav-cont > h3 {
+  font-family: main;
+}
+
+.page1-center-left > h1 {
+  font-family: italic;
+}
+
+.page1-end > h1 {
+  font-family: italic;
+}
+
+span {
+  display: inline-block;
+}
