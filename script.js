@@ -21,7 +21,7 @@ function lenisJs() {
 }
 lenisJs();
 
-function navAnimation() {
+function page1Animation() {
   const navLeftH1 = document.querySelector(".nav-left>h1");
   navLeftH1.innerHTML = clutterAnimation(".nav-left>h1");
 
@@ -173,5 +173,5 @@ function gsapAnimation() {
     delay: -0.5,
   });
 
-  navAnimation();
+  page1Animation();
 }
