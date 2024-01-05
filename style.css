@@ -61,3 +61,19 @@ html {
 span {
   display: inline-block;
 }
+
+#span-space {
+  margin-left: 3px;
+}
+
+.page2 > h1 {
+  font-family: italic;
+  font-size: 4vw;
+}
+
+.page3-box > h1 {
+  font-family: italic;
+}
+.page3-box > h3 {
+  font-family: main;
+}
