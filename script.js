@@ -297,3 +297,29 @@ tl.from(".page3-fifth>span", {
     // markers: true,
   },
 });
+
+tl.to(".page4-box", {
+  y: -400,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4-box",
+    start: "top 50%",
+    end: "top -100%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.from(".page5-pin", {
+  alignItems: "center",
+  scale: 5,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page5",
+    start: "top 0%",
+    end: "top -100%",
+    scrub: 1,
+    pin: true,
+    markers: true,
+  },
+});

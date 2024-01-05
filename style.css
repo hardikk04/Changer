@@ -88,3 +88,68 @@ span {
   background-position: center top;
   background-size: cover;
 }
+
+.page4-box > h1 {
+  font-family: main;
+}
+
+.page4-box > h1 > span {
+  font-family: italic;
+}
+
+.page4-box-elem-heading > h1 {
+  font-family: italic;
+}
+
+.page4-box-elem-heading > h1 > span {
+  font-family: main;
+}
+
+.page4-box-elem-heading-left > span {
+  font-family: main;
+}
+
+.page4-box-elem-heading-left > h1 {
+  font-family: italic;
+  font-size: 3vw;
+}
+
+.page4-inner-left-elem > h1 {
+  font-family: italic;
+}
+
+.page4-inner-left-elem > h1 > span {
+  font-family: main;
+}
+
+.page4-inner-left-elem h3,
+.page4-inner-left-elem p {
+  font-family: main;
+}
+
+.page4-inner-right > h1 {
+  font-family: italic;
+}
+
+.page4-inner-right > h1 > span {
+  font-family: main;
+}
+
+.page5 {
+  position: relative;
+  background-image: url("https://changers.studio/assets/9140745187e588464432.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.page5-pin {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.page5-pin > h1 {
+  font-family: italic;
+}
