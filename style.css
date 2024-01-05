@@ -25,6 +25,10 @@ html {
   src: url(./c5ce8b90fbb611d83f6f.woff);
 }
 
+.preloader {
+  pointer-events: none;
+}
+
 .preloader h1,
 .preloader h3 {
   font-family: italic;

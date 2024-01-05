@@ -40,7 +40,7 @@ function page1Animation() {
     transform: "scaleY(3)",
     stagger: 0.1,
     duration: 1,
-    delay: 0.5,
+    delay: 2.5,
   });
   gsap.from(".nav-left>h3>span", {
     opacity: 0,
@@ -48,7 +48,7 @@ function page1Animation() {
     transform: "scaleY(3)",
     stagger: 0.1,
     duration: 1,
-    delay: 0.5,
+    delay: 2.5,
   });
   gsap.from(".nav-right>h3>span", {
     opacity: 0,
@@ -56,7 +56,7 @@ function page1Animation() {
     transform: "scaleY(3)",
     stagger: 0.1,
     duration: 1,
-    delay: 0.5,
+    delay: 2.5,
   });
 
   gsap.from(".nav-cont>h3>span ,.nav-cont>img", {
@@ -65,7 +65,7 @@ function page1Animation() {
     transform: "scaleY(3)",
     stagger: 0.1,
     duration: 1,
-    delay: 0.5,
+    delay: 2.5,
   });
 
   const centerLeft1 = document.querySelector(".center-left1");
@@ -80,18 +80,21 @@ function page1Animation() {
     y: 50,
     transform: "scaleY(3)",
     stagger: 0.1,
+    delay: 1.5,
   });
   gsap.from(".center-left2>span", {
     opacity: 0,
     y: 50,
     transform: "scaleY(3)",
     stagger: 0.1,
+    delay: 1.5,
   });
   gsap.from(".center-left3>span", {
     opacity: 0,
     y: 50,
     transform: "scaleY(3)",
     stagger: 0.1,
+    delay: 1.5,
   });
 
   const centerRight1 = document.querySelector(".center-right1");
@@ -104,12 +107,14 @@ function page1Animation() {
     y: 20,
     transform: "scaleY(3)",
     stagger: 0.1,
+    delay: 1.5,
   });
   gsap.from(".center-right2>span", {
     opacity: 0,
     y: 20,
     transform: "scaleY(3)",
     stagger: 0.1,
+    delay: 1.5,
   });
 
   const mainH1 = document.querySelector(".main-h1");
@@ -118,8 +123,9 @@ function page1Animation() {
     opacity: 0,
     y: 40,
     transform: "scaleY(3)",
-    stagger: 0.2,
-    delay: 1,
+    stagger: 0.1,
+    duration: 1,
+    delay: 3,
   });
 }
 
@@ -128,17 +134,16 @@ function counterFunction(counterTag) {
 
   const myInterval = setInterval(() => {
     counterTag.forEach((h1) => {
-      if (counter < 100) {
+      if (counter < 98) {
         h1.textContent = counter;
       } else {
         h1.textContent = 100;
-
         clearInterval(myInterval);
         gsapAnimation();
       }
+      counter++;
     });
-    counter++;
-  }, 20);
+  }, 50);
 }
 
 let cLayerCounter = document.querySelectorAll(".c-layer>h1");
@@ -164,14 +169,13 @@ function gsapAnimation() {
     scale: 30,
     opacity: 0,
     ease: "power4.in",
-    duration: 1.5,
+    duration: 2,
   });
 
   tl.to(".preloader", {
     opacity: 0,
-    display: "none",
+    // display: "none",
     delay: -0.5,
   });
-
-  page1Animation();
 }
+page1Animation();
