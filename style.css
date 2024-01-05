@@ -25,6 +25,10 @@ html {
   src: url(./c5ce8b90fbb611d83f6f.woff);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .preloader {
   pointer-events: none;
 }
@@ -76,4 +80,11 @@ span {
 }
 .page3-box > h3 {
   font-family: main;
+}
+
+.page4 {
+  position: relative;
+  background-image: url("https://changers.studio/assets/2e74b4d5e1b4aa6ae7de.png");
+  background-position: center top;
+  background-size: cover;
 }
