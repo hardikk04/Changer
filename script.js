@@ -18,7 +18,7 @@ function lenisJs() {
   lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
-    lenis.raf(time * 500);
+    lenis.raf(time * 1000);
   });
 
   gsap.ticker.lagSmoothing(0);
@@ -312,7 +312,7 @@ tl.to(".page4-box", {
 
 tl.from(".page5-pin", {
   alignItems: "center",
-  scale: 5,
+  scale: 4.5,
   scrollTrigger: {
     scroller: "body",
     trigger: ".page5",
@@ -320,6 +320,156 @@ tl.from(".page5-pin", {
     end: "top -100%",
     scrub: 1,
     pin: true,
-    markers: true,
+    // markers: true,
+  },
+});
+
+tl.to(".page6-box-container", {
+  transform: "translateX(-400%)",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page6",
+    start: "top 0%",
+    end: "top -400%",
+    scrub: 1,
+    pin: true,
+    // markers: true,
+  },
+});
+
+tl.to(".page6", {
+  backgroundColor: "#000",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page6",
+    start: "top 0%",
+    end: "top -400%",
+    scrub: 1,
+  },
+});
+
+clutterAnimation(".page7-text");
+
+tl.from(".page7-text>span", {
+  opacity: 0,
+  y: 100,
+  transform: "scaleY(3)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-text>span",
+    start: "top 65%",
+    end: "top 00%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part2", {
+  y: -300,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part2",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part3", {
+  y: -500,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part3",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part4", {
+  y: -600,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part4",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part7", {
+  y: -300,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part7",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part8", {
+  y: -500,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part8",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part9", {
+  y: -600,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part9",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-part10", {
+  y: -400,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-part10",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-black-last,.page7,.page8", {
+  backgroundColor: "#fff",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page8",
+    start: "top 100%",
+    end: "top 0%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page7-text", {
+  opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page8",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
   },
 });
