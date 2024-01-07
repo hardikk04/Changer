@@ -18,7 +18,7 @@ function lenisJs() {
   lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
+    lenis.raf(time * 500);
   });
 
   gsap.ticker.lagSmoothing(0);
@@ -540,7 +540,7 @@ clutterAnimation(".page9>h1");
 
 tl.from(".page9>h1>span", {
   // opacity: 0,
-  y: 300,
+  y: 100,
   transform: "scaleY(3)",
   stagger: 0.1,
   duration: 1,
