@@ -473,3 +473,30 @@ tl.to(".page7-text", {
     // markers: true,
   },
 });
+
+const readBtnAll = document.querySelectorAll(".read-btn");
+const page8Box = document.querySelectorAll(".page8-box");
+const page8BoxImg = document.querySelectorAll(".page8-left-elem-img");
+
+readBtnAll.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    for (let i = 0; i < page8Box.length; i++) {
+      if (i === index) {
+        gsap.to(page8Box[index], {
+          height: "45vh",
+        });
+        gsap.to(page8BoxImg[index], {
+          opacity: 1,
+        });
+      } else {
+        gsap.to(page8Box[i], {
+          height: "6.5vh",
+          overflow: "hidden",
+        });
+        gsap.to(page8BoxImg[i], {
+          opacity: 0,
+        });
+      }
+    }
+  });
+});

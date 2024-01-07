@@ -222,3 +222,19 @@ span {
 .page7-part11-img {
   border: 1px solid #ffffff4b;
 }
+
+.main-font {
+  font-family: main;
+}
+
+.page8-btn > button {
+  border: 1px solid #00000039;
+  padding: 0.3vw 0.8vw;
+  color: #00000090;
+  border-radius: 1vw;
+  font-weight: 600;
+}
+
+.read-btn {
+  cursor: pointer;
+}
