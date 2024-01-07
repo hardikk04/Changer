@@ -553,3 +553,153 @@ tl.from(".page9>h1>span", {
     // markers: true,
   },
 });
+
+clutterAnimation(".page10>h1");
+
+tl.from(".page10>h1>span", {
+  opacity: 0,
+  x: -10,
+  transform: "scale3D(5,1,1,360deg)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page10>h1>span",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.from(".page10-elem", {
+  opacity: 0,
+  stagger: 0.1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page10-elem",
+    start: "top 100%",
+    end: "top 20%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".page11>h1");
+
+tl.from(".page11>h1>span", {
+  opacity: 0,
+  x: -10,
+  transform: "scale3D(5,1,1,360deg)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page11>h1>span",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.from(".page11-elem", {
+  opacity: 0,
+  stagger: 0.1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page11-elem",
+    start: "top 100%",
+    end: "top 20%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".page12>h1");
+
+tl.from(".page12>h1>span", {
+  opacity: 0,
+  x: -10,
+  transform: "scale3D(5,1,1,360deg)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page12>h1>span",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.from(".page12-elem", {
+  opacity: 0,
+  stagger: 0.1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page12-elem",
+    start: "top 100%",
+    end: "top 20%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".page13>h1");
+
+tl.from(".page13>h1>span", {
+  opacity: 0,
+  y: 300,
+  transform: "scaleY(3)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page13>h1>span",
+    start: "top 150%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+tl.to(".page13,.page14", {
+  backgroundColor: "#000",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page14",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".footer-text1");
+clutterAnimation(".footer-text2");
+clutterAnimation(".footer-text3");
+
+tl.from(".footer-text1>span,.footer-text2>span,.footer-text3>span", {
+  opacity: 0,
+  y: 100,
+  transform: "scaleY(4)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".footer-text1>span",
+    start: "top 100%",
+    end: "top 00%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+Shery.mouseFollower();
+
+Shery.makeMagnet(".big-crs, .page5-pin", {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});

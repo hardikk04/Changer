@@ -238,3 +238,40 @@ span {
 .read-btn {
   cursor: pointer;
 }
+
+.page14-right-circle {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.232);
+}
+
+.page14-right-circle {
+  position: relative;
+  overflow: hidden;
+}
+
+.page14-right-circle::after {
+  content: attr(name);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  color: #000;
+  transition: all ease 1s;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.page14-right-circle:hover::after {
+  top: 0%;
+  opacity: 1;
+}
+
+.cursor {
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
