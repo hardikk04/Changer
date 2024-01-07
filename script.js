@@ -500,3 +500,37 @@ readBtnAll.forEach((button, index) => {
     }
   });
 });
+
+clutterAnimation(".page8-heading>h1");
+clutterAnimation(".page8-heading>span");
+
+tl.from(".page8-heading>h1>span", {
+  opacity: 0,
+  y: 100,
+  transform: "scaleY(3)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page8-heading>h1>span",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+tl.from(".page8-heading>span>span", {
+  opacity: 0,
+  y: 100,
+  transform: "scaleY(3)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page8-heading>span>span",
+    start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
