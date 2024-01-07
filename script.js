@@ -139,7 +139,7 @@ function counterFunction(counterTag) {
       }
       counter++;
     });
-  }, 5);
+  }, 45);
 }
 
 let cLayerCounter = document.querySelectorAll(".c-layer>h1");
