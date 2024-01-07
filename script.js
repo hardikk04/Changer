@@ -519,6 +519,7 @@ tl.from(".page8-heading>h1>span", {
     // markers: true,
   },
 });
+
 tl.from(".page8-heading>span>span", {
   opacity: 0,
   y: 100,
@@ -529,6 +530,24 @@ tl.from(".page8-heading>span>span", {
     scroller: "body",
     trigger: ".page8-heading>span>span",
     start: "top 100%",
+    end: "top 50%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".page9>h1");
+
+tl.from(".page9>h1>span", {
+  // opacity: 0,
+  y: 300,
+  transform: "scaleY(3)",
+  stagger: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page9>h1>span",
+    start: "top 200%",
     end: "top 50%",
     scrub: 1,
     // markers: true,
